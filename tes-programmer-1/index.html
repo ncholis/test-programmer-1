@@ -1,0 +1,444 @@
+<html lang="en">
+<head>
+  <title>Tes Programmer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+     .box-list {
+        padding: 0 10px 60px 10px;
+     }
+
+     body {
+        margin-right: 0px !important;
+     }
+
+     .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+     }
+
+     .py-0 {
+        background-color: #eee;
+     }
+
+     .banner-sidebar1,
+     .banner-sidebar2 {
+        display: none;
+     }
+
+     @media (min-width: 1400px) {
+        .banner-sidebar1 {
+           float: left;
+           display: unset;
+           padding: 0;
+           border-radius: 0px;
+           margin: 0;
+           margin-left: 0px;
+           position: relative;
+           margin-left: -195px;
+        }
+
+        .banner-sidebar2 {
+           float: right;
+           display: unset;
+           position: relative;
+           margin: 0;
+           margin-left: 0px;
+           padding: 0;
+           border-radius: 0px;
+           margin-left: -151px;
+        }
+     }
+
+     .tetap {
+        position: fixed;
+        top: 0px !important;
+     }
+
+     .tetap1 {
+        position: fixed;
+        top: 0px !important;
+        margin-left: -124px !important;
+     }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu-top">
+     <a class="navbar-brand" href="#">Tes</a>
+     <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Transportasi</a>
+              <div class="dropdown-menu">
+                 <a class="dropdown-item" href="#">Bus</a>
+                 <a class="dropdown-item" href="#">Kereta Api</a>
+                 <a class="dropdown-item" href="#">Pesawat</a>
+              </div>
+           </li>
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Akomodasi</a>
+              <div class="dropdown-menu">
+                 <a class="dropdown-item" href="#">Hotel</a>
+                 <a class="dropdown-item" href="#">Homestay</a>
+              </div>
+           </li>
+        </ul>
+     </div>
+  </nav>
+
+  <script>
+     (function() {
+        var previousScroll = 0;
+        $(window).scroll(function() {
+           var currentScroll = $(this).scrollTop();
+           if (currentScroll == 0) {
+              $(".menu-top").removeClass('fixed-top');
+           } else if (currentScroll > previousScroll) {
+              $(".menu-top").removeClass('fixed-top');
+           } else {
+              $(".menu-top").addClass('fixed-top');
+           }
+           previousScroll = currentScroll;
+        });
+     }());
+  </script>
+
+  <div class="py-0">
+     <div class="container-fluid text-def sf-bg-body">
+        <div class="container sf-bl-container sf-br-container sf-konten bg-white">
+
+           <div class="p-3">
+              <h1 class="text-center mb-3">7 Tempat Wisata di Surabaya yang Wajib Dikunjungi</h1>
+              <div class="row" id="id_load_more" style="margin-right: -2.5%;margin-left: -2.5%;">
+                 <div class="data-post box-list col-sm-3">
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height: 150px;padding: 10px;">Sebagai kota terbesar kedua di Indonesia, Surabaya memiliki segudang tempat wisata yang menarik untuk didatangi. Kota Surabaya cocok untuk dikunjungi bersama keluarga, teman, ataupun sendirian bagi para jomblo ngenes supaya tidak galau. Jadi, selagi berada di Surabaya, Anda wajib bertandang ke 15 tempat wisata di Surabaya berikut ini...</div>
+                    </div>
+                    <br>
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Taman Prestasi</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Tempat wisata di Surabaya yang satu ini letaknya berada di Jl. Ketabang Kali No.6, Ketabang, Genteng, yaitu pusat kota agak ke utara. Namanya berasal dari banyaknya replika penghargaan yang terdapat pada taman ini. Asyiknya, selain tidak ada biaya masuk, kelengkapan fasilitas pendukung di taman ini juga patut diacungi jempol.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="data-post box-list col-sm-3">
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Taman Bungkul</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Penat dengan hiruk pikuk kantor dan perkotaan? Yuk, nikmati rindangnya pepohonan di taman ini. Posisinya sangat strategis, yaitu berada di tengah kota, di Darmo, Wonokromo.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                    <br>
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Pantai Ria Kenjeran Park</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Posisinya berada di Kota Surabaya bagian timur laut. Sekitar 1 kilometer dari Pantai Kenjeran Lama. Biaya masuk ke kawasan pantai indah ini adalah seharga Rp. 15.000 per orang, sedangkan parkirnya Rp. 10.000 untuk mobil dan Rp. 8.000 untuk motor.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="data-post box-list col-sm-3">
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Hutan Bambu dan Taman Harmoni Keputih</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Tidak perlu jauh-jauh ke Asia Timur untuk berfoto dengan latar belakang bambu yang memesona. Datang saja ke hutan yang terletak bagian timur Kota Surabaya, yaitu di Jl. Raya Marina Asri, Keputih.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                    <br>
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Ekowisata Mangrove</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Tahukah Anda apa itu mangrove? Mangrove adalah hutan bakau yang biasanya ditanam di sekitar pantai untuk menghambat derasnya air laut yang menuju daratan. Tujuannya adalah untuk menghindari abrasi dan bencana alam seperti misalnya luapan air laut.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="data-post box-list col-sm-3">
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Kebun Bibit Wonorejo</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Lahan yang berada di pusat kota bagian tenggara ini sering juga disebut sebagai Kebun Bibit 2. Sedangkan, Kebun Bibit 1nya adalah Taman Flora, sebuah taman di daerah Bratang.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                    <br>
+                    <div class="sf-shadow border border-data" style="max-width: 420px;margin:0 auto;">
+                       <div style="min-height:50px;">
+                          <div class="sf-min-h-80 p-2">
+                             <h2>Kebun Binatang Surabaya</h2>
+                          </div>
+                       </div>
+                       <hr style="margin-bottom: 0px;margin-top: 0px;border-top: 1px solid #aaa;">
+                       <div style="
+                                min-height: 150px;
+                                padding: 5px;
+                                ">
+                          <p>Masih membahas tempat wisata di Surabaya bertema alam, ini dia tempat wisata di Surabaya yang sudah berhasil menjadi favorit sepanjang masa. Posisinya berada di tengah kota, dekat dengan patung Sura dan Boyo, yaitu Jalan Setail No.1, Darmo, Wonokromo.</p>
+                          <strong>Read More...</strong>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+
+        </div>
+        <div class="container sf-bl-container sf-br-container sf-konten">
+        </div>
+     </div>
+  </div>
+  <script type="text/javascript">
+     var width_w = $(window).width(),
+        height_w = $(window).height();
+
+     $(document).ready(function() {
+        cek_width_w();
+     })
+
+     function cek_width_w() {
+        if ($(window).width() < 900) {
+           set_w(6);
+        } else {
+           set_w(4);
+        }
+     }
+
+     function set_w(val) {
+        $(".post-w").removeClass("col-sm-4");
+        $(".post-w").removeClass("col-sm-6");
+        if (val == 4) {
+           $(".post-w").addClass("col-sm-4");
+        } else if (val == 6) {
+           $(".post-w").addClass("col-sm-6");
+        }
+     }
+     $(window).on('resize', function(e) {
+        setTimeout(function() {
+           if ($(window).width() < 1430) {
+              $('.banner-sidebar1').hide();
+              $('.banner-sidebar2').hide();
+           } else {
+              $('.banner-sidebar1').show();
+              $('.banner-sidebar2').show();
+           }
+           if ($(window).width() != width_w 
+                  || $(window).height() != height_w) {
+              height_w = $(window).height();
+              width_w = $(window).width();
+              cek_width_w();
+           }
+        }, 500);
+     });
+  </script>
+  <script>
+    function cek_width() {
+      if ($(window).width() < 500) {
+        setw(6);
+      } else if ($(window).width() > 500 && $(window).width() < 980) {
+        setw(6);
+      } else {
+        setw(3);
+      }
+    }
+
+    function setw(val) {
+      $(".data-post").removeClass("col-sm-3");
+      $(".data-post").removeClass("col-sm-6");
+      
+      if (val == 3) {
+        $(".data-post").addClass("col-sm-3");
+        $(".list-4").addClass("col-sm-3");
+      } else if (val == 6) {
+        $(".data-post").addClass("col-sm-6");
+        $(".list-4").addClass("col-sm-6");
+      }
+    }
+
+    var width = $(window).width(),
+      height = $(window).height();
+    $(window).on('resize', function (e) {
+      setTimeout(function () {
+        if ($(window).width() != width || $(window).height() != height) {
+          width = $(window).width();
+          height = $(window).height();
+          cek_width()
+        }
+      }, 500)
+    })
+
+    $(document).ready(function () {
+      cek_width()
+    })
+
+    var cek_load = 0;
+    var lastScrollTop = 0;
+    var cek_more_footer = 0;
+    $(window).scroll(function() {
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            if ((scrollHeight - scrollPosition) / scrollHeight < 0.0098) {
+                if ($(window).width() <= 2000) {
+                    if (cek_more_footer == 0) {
+                        $('#modal-load-more-footer').modal('show');
+                        var position = $(window).scrollTop();
+                        $('body').removeClass('modal-open')
+                    } else if (cek_more_footer = 1) {
+                        if (cek_load == 0) {
+                            load_more_footer()
+                        }
+                    }
+                }
+            }
+        } else {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > position) {} else {
+                    $('#modal-load-more-footer').modal('hide')
+                }
+                position = scroll
+            })
+        }
+        lastScrollTop = st
+    })
+
+    function confirm_loadmore() {
+        $("#bodyfoot").html('<div class="text-center"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i></div>');
+        load_more_footer();
+        document.querySelector('#id_load_more_footer').scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
+    function load_more_footer() {
+        $('#loading-row').show();
+        $('#display-load-more-footer').show();
+
+        lastpage = lastpage + 12;
+        $('#loading-row').hide();
+        var load_more_data = $('#id_load_more').html()
+        $('#id_load_more_footer').append(load_more_data);
+        cek_width();
+        cek_load = 0;
+        $(".loadfoot").remove();
+        $('#modal-load-more-footer').modal('hide')
+    }
+    var width = $(window).width(),
+        height = $(window).height();
+    $(window).on('resize', function(e) {
+        setTimeout(function() {
+            if ($(window).width() != width || $(window).height() != height) {
+                width = $(window).width();
+                height = $(window).height();
+                cek_width()
+            }
+        }, 500)
+    })
+  </script>
+  <div class="py-0" style="background-color: #eee;">
+     <div class="container-fluid text-def sf-bg-body">
+        <div class="container sf-bl-container sf-br-container sf-konten bg-white" id="display-load-more-footer" style="display: none;padding-top:60px;">
+           <div class="row" id="id_load_more_footer">
+           </div>
+           <div id="loading-row" class="text-center" style="display: none;"><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i></div>
+        </div>
+     </div>
+  </div>
+  <div class="modal" tabindex="-1" id="modal-load-more-footer" role="dialog">
+     <div class="modal-dialog" role="document" style="position: fixed;top: auto;right: auto;left: auto;bottom: 0;left: 50%;transform: translateX(-50%);width: 60%;">
+        <div class="modal-content">
+           <div class="modal-footer" style="justify-content: center;" id="loadfoot" style="padding-top: 0px;">
+              <div class="row">
+                 <div class="col-12 mb-2" id="bodyfoot" style="border-bottom: unset">
+                    <div class="text-center">Loadmore ?</div>
+                 </div>
+                 <div class="col-6">
+                    <a href="javascript:confirm_loadmore();"><button style="width: 100%;" type="button" class="btn btn-primary">Ya</button></a>
+                 </div>
+                 <div class="col-6">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <script>
+     var ada = 12;
+
+     if (ada > 0) {
+        $('#id_load_more_btn').show();
+     } else {
+        $('#id_load_more_btn').hide();
+     }
+     var katload = "artikel";
+     var katbro = "";
+     var dbtopik = "";
+     var pair = "";
+     var level = '';
+     var lastpage = 12;
+  </script>
+</body>
+</html> 
